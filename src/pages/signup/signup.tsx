@@ -34,84 +34,90 @@ const Signup: React.FC <{}>=()=> {
     const classes = useStyles();
     return (
         <>
-        <Container  component="main" maxWidth="xs" style={{width: '100vw'}}>
+            <CssBaseline />
+            <Box component="span" m={1}>
+                <Container  component="main" maxWidth="xs" style={{width: '100vw'}}>
                     <Paper   
                         elevation={3} 
                         variant="outlined" 
                         className={classes.paper} 
                     >
-                    {/*<h1 className={classes.heading}>SignUp</h1>*/}
-                    <Typography className={classes.heading} align="center" color="primary">SignUp</Typography>
-                        <FormControl 
-                            fullWidth 
-                            className={classes.margin}
+                        {/*<h1 className={classes.heading}>SignUp</h1>*/}
+                        <Typography
+                            className={classes.heading} 
+                            align="center" color="primary">
+                            SignUp
+                        </Typography>
+                            <FormControl 
+                                fullWidth 
+                                className={classes.margin}
+                                >
+                                    <TextField 
+                                        label="Name" 
+                                        variant="outlined"
+                                        className={classes.textField} 
+                                    />
+                            </FormControl>
+                            <FormControl 
+                                fullWidth 
+                                className={classes.margin}
+                                >
+                                    <TextField 
+                                        label="Email" 
+                                        variant="outlined"
+                                        className={classes.textField} 
+                                    />
+                            </FormControl>
+                            <FormControl 
+                                fullWidth 
+                                className={classes.margin}
                             >
                                 <TextField 
-                                    label="Name" 
+                                    label="Password" 
                                     variant="outlined"
                                     className={classes.textField} 
+                                    type="password"                        
                                 />
-                        </FormControl>
-                        <FormControl 
-                            fullWidth 
-                            className={classes.margin}
+                            </FormControl> 
+                            <FormControl 
+                                fullWidth 
+                                className={classes.margin}
                             >
                                 <TextField 
-                                    label="Email" 
+                                    label="Confirm Password" 
                                     variant="outlined"
-                                    className={classes.textField} 
+                                    className={classes.textField}  
+                                    type="password"                        
                                 />
-                        </FormControl>
-                        <FormControl 
-                            fullWidth 
-                            className={classes.margin}
-                        >
-                            <TextField 
-                                label="Password" 
-                                variant="outlined"
-                                className={classes.textField} 
-                                type="password"                        
-                            />
-                        </FormControl> 
-                        <FormControl 
-                            fullWidth 
-                            className={classes.margin}
-                        >
-                            <TextField 
-                                label="Confirm Password" 
-                                variant="outlined"
-                                className={classes.textField}  
-                                type="password"                        
-                            />
-                        </FormControl> 
-                        <FormControl 
-                            fullWidth 
-                            className={classes.margin}
-                        >
-                            <Button 
-                                variant="contained" 
-                                color="primary"
-                                className={classes.textField}
-                            
+                            </FormControl> 
+                            <FormControl 
+                                fullWidth 
+                                className={classes.margin}
                             >
-                                Sign up
-                            </Button>
-                        </FormControl>
-                        <Typography align="center" color="primary">or</Typography>
-                        <FormControl 
-                            fullWidth 
-                            className={classes.margin}
-                        >
-                            <a href=""
-                            className={classes.anchor}
+                                <Button 
+                                    variant="contained" 
+                                    color="primary"
+                                    className={classes.textField}
+                                
+                                >
+                                    Sign up
+                                </Button>
+                            </FormControl>
+                            <Typography align="center" color="primary">or</Typography>
+                            <FormControl 
+                                fullWidth 
+                                className={classes.margin}
                             >
-                                Login
-                            </a>
-                        </FormControl>     
+                                <a href=""
+                                className={classes.anchor}
+                                >
+                                    Login
+                                </a>
+                            </FormControl>     
                     </Paper>
                 </Container>
+            </Box>
         </>
-    
     );
   }
 

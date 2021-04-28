@@ -15,7 +15,7 @@ const dark = {
   overrides: {
     MuiAppBar: {
       colorInherit: {
-        backgroundColor: '#689f38',
+        backgroundColor: '#202124',
         color: '#fff',
       },
     },
@@ -36,6 +36,10 @@ const dark = {
         height: 26,
         padding: 0,
         margin: 8,
+        zIndex: '1202',
+        position: 'relative',
+        alignItems: 'flex-end',
+        justifyContent: 'center',
       },
       switchBase: {
         padding: 1,

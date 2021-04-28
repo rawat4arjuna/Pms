@@ -3,7 +3,7 @@ import  React from "react";
 let ContextOne = React.createContext<any>({})
 
 let initialState = {
-  theme:true,
+  theme: null
 };
 
 let reducer = (state : any, action:any) => {

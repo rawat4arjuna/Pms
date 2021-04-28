@@ -39,6 +39,10 @@ const light = {
         height: 26,
         padding: 0,
         margin: 8,
+        zIndex: 1202,
+        position: 'relative',
+        alignItems: 'flex-end',
+        justifyContent: 'center',
       },
       switchBase: {
         padding: 1,
